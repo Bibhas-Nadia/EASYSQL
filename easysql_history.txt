@@ -1,0 +1,33 @@
+
+# 2025-05-24 20:43:49.059312
++SELECT c_id FROM college
+
+# 2025-05-24 20:44:10.325882
++DELETE FROM college WHERE c_id = 1
+
+# 2025-05-24 20:54:06.713446
++DELETE FROM college WHERE c_id = '1'
+
+# 2025-05-24 20:54:59.838144
++UPDATE college SET c_id = 1 WHERE c_id = 2
+
+# 2025-05-24 20:55:23.107795
++select * from student
+
+# 2025-05-24 20:55:40.293165
++exit
+
+# 2025-05-24 20:56:25.018241
++select * from college
+
+# 2025-05-24 20:57:33.478829
++insert into college VALUES ('Sister Nivedita University','Kolkata','West Bengal')
+
+# 2025-05-24 20:57:49.757403
++insert into college VALUES (51,'Sister Nivedita University','Kolkata','West Bengal')
+
+# 2025-05-24 20:58:01.526910
++select * from college
+
+# 2025-05-24 20:58:09.123920
++exit

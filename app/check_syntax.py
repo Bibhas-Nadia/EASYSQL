@@ -322,28 +322,28 @@ def checkSyntax(query, schema):
     return corrected, errors
 
 
-from serverConnect import serverConnect
-dobj = serverConnect()  # It should be first
-schema = dobj.fetch_database_structure()  # It should be second
+# from serverConnect import serverConnect
+# dobj = serverConnect()  # It should be first
+# schema = dobj.fetch_database_structure()  # It should be second
 
 
-test_queries = [
-    "select s_name s_email from studennt where s_name = 'Bibhas'",
-    "select s_name from student where s_name = Bibhas and s_id = '123'",
-    "select s_name from student where s_name = 'Bibhas''",
-    "select s_name s_email from studennt where s_name = (sellect s_name fromm student where s_city = Kolkatta",
-    "select s_name from student where s_name = 'A_VERY_LONG_NAME_EXCEEDING_100_CHARACTERS_ABCDEFGHIJKLMNOPQRSTUVWXYZ_ABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890'",
-    "select s_id, s_name from student where s_id = 102",
-    "selct s_name s_city from student wheer s_city = kolkata;",
-    "select s_name s_email s_id from student",
-    "select s_name from student;;;",
-    "select s_name from student where s_name in('Bibhas 'Gragi')",
-    "select * from student where s_name like 'Bibh% and s_id like '%_5"
-    ]
+# test_queries = [
+#     "select s_name s_email from studennt where s_name = 'Bibhas'",
+#     "select s_name from student where s_name = Bibhas and s_id = '123'",
+#     "select s_name from student where s_name = 'Bibhas''",
+#     "select s_name s_email from studennt where s_name = (sellect s_name fromm student where s_city = Kolkatta",
+#     "select s_name from student where s_name = 'A_VERY_LONG_NAME_EXCEEDING_100_CHARACTERS_ABCDEFGHIJKLMNOPQRSTUVWXYZ_ABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890'",
+#     "select s_id, s_name from student where s_id = 102",
+#     "selct s_name s_city from student wheer s_city = kolkata;",
+#     "select s_name s_email s_id from student",
+#     "select s_name from student;;;",
+#     "select s_name from student where s_name in('Bibhas 'Gragi')",
+#     "select * from student where s_name like 'Bibh% and s_id like '%_5"
+#     ]
 
-for query in test_queries:
-    corrected_query, fixes = checkSyntax(query, schema)
-    print("Original:", query)
-    print("Corrected:", corrected_query)
-    print("Fixes:", fixes)
-    print("-" * 50)
+# for query in test_queries:
+#     corrected_query, fixes = checkSyntax(query, schema)
+#     print("Original:", query)
+#     print("Corrected:", corrected_query)
+#     print("Fixes:", fixes)
+#     print("-" * 50)

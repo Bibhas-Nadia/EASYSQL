@@ -3,7 +3,6 @@ import json
 import base64
 import getpass
 import os
-
 DIR="/opt/easysql/"
 #DIR = "./"
 
@@ -130,29 +129,27 @@ class serverConnect():
     #         self.conn.close()
     #         return []
 
-
-
     def runQuery(self, query):
         try:
             self.connect_server()
-            #print(f"Query is: {query}")
             cursor = self.conn.cursor()
 
             # Execute the query
             cursor.execute(query)
 
-            # Fetch column names from the cursor description
-            columns = [column[0] for column in cursor.description]
-
-            # Fetch all rows
-            rows = cursor.fetchall()
-
-            # Convert rows to a list of lists (each row is a list of values)
-            data = [list(row) for row in rows]
+            if cursor.description:  # Only SELECT-like queries have descriptions
+                columns = [column[0] for column in cursor.description]
+                rows = cursor.fetchall()
+                data = [list(row) for row in rows]
+            else:
+                # For INSERT, UPDATE, DELETE, etc.
+                self.conn.commit()  # Commit the transaction
+                columns = ["Query OK"]
+                data = [[f"{cursor.rowcount} row(s) affected"]]
 
             cursor.close()
             self.conn.close()
-            return [columns, data]  # Return [field_names, data_rows]
+            return [columns, data]
 
         except pymysql.MySQLError as e:
             print(f"Error: {e}")
@@ -160,7 +157,37 @@ class serverConnect():
                 cursor.close()
             if self.conn:
                 self.conn.close()
-            return [[], []]  # Return empty lists in case of error
+            return [[], []]
+
+    # def runQuery(self, query):
+    #     try:
+    #         self.connect_server()
+    #         #print(f"Query is: {query}")
+    #         cursor = self.conn.cursor()
+
+    #         # Execute the query
+    #         cursor.execute(query)
+
+    #         # Fetch column names from the cursor description
+    #         columns = [column[0] for column in cursor.description]
+
+    #         # Fetch all rows
+    #         rows = cursor.fetchall()
+
+    #         # Convert rows to a list of lists (each row is a list of values)
+    #         data = [list(row) for row in rows]
+
+    #         cursor.close()
+    #         self.conn.close()
+    #         return [columns, data]  # Return [field_names, data_rows]
+
+    #     except pymysql.MySQLError as e:
+    #         print(f"Error: {e}")
+    #         if cursor:
+    #             cursor.close()
+    #         if self.conn:
+    #             self.conn.close()
+    #         return [[], []]  # Return empty lists in case of error
 
 
 #obj = serverConnect()
