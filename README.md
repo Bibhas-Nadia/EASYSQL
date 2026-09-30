@@ -34,13 +34,9 @@ EASYSQL is a terminal-based tool designed to help beginners write correct SQL qu
 
 Watch our demonstration video to see EASYSQL in action:
 
-<video src="Images/demo.mp4" controls="controls" width="100%" style="max-width: 100%;">
-  Your browser does not support HTML5 video player. <a href="Images/demo.mp4">Click here to view or download the video directly.</a>
-</video>
+*Note: If you want see full video you can find demo_vid.mp4 file under Images folder
 
-*Note: If the video preview above does not load in your markdown editor, click the banner below to open the video:*
-
-[![EASYSQL Demo Banner](Images/demo_img.jpg)](Images/demo_vid.mp4)
+![EASYSQL Demo Banner](Images/demo.gif)
 
 ---
 
