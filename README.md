@@ -30,6 +30,29 @@ Corrects syntax issues like missing semicolons or unmatched parentheses.
 
 ---
 
+## 🎥 Demo Video
+
+Watch our demonstration video to see EASYSQL in action!
+
+*(Note: Standard Markdown doesn't support embedding video players directly, but you can link an image to your video. Replace the links below with your actual YouTube/Vimeo links, or simply drag and drop your `.mp4` file directly into the GitHub editor to auto-generate a video player!)*
+
+[![EASYSQL Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+---
+
+## 📜 Patent Information
+
+We are proud to announce that the EASYSQL system has been officially patented!
+
+- **Title:** An iot-enabled interactive system for real-time sql suggestion and auto-correction
+- **Application No:** 202631062458
+- **Publication Date:** 11-09-2026
+- **Date of Filing:** 17-05-2026
+
+![Patent Document](1000057237.jpg)
+
+---
+
 ## 📚 Dataset
 
 - 1400+ pre-constructed queries based on SQL operations.
@@ -75,6 +98,7 @@ Includes use case diagrams, suggestion process logic, and backend workflow.
 
 Also prove basic suggestions 
 ![Correction](Images/correction.png)
+
 ---
 
 ## 🧱 Limitations
@@ -85,7 +109,7 @@ Also prove basic suggestions
 
 ---
 
-##  Future Scope
+## 🚀 Future Scope
 
 - PostgreSQL and Oracle DB support
 - Natural language to SQL conversion
@@ -94,16 +118,15 @@ Also prove basic suggestions
 
 ---
 
+## 💻 Installation
 
-##  Installation
-
-* Downlaod the repository
+* Download the repository
 
 ```bash
 git clone https://github.com/Bibhas-Das/EASYSQL.git
 ```
 
-Or downlaod teh Zip file
+Or download the Zip file
 
 * Go to EASYSQL/install folder
 
@@ -111,25 +134,25 @@ Or downlaod teh Zip file
 cd EASYSQL/install
 ```
 
-* There install.sh file si there just run it
+* There install.sh file is there just run it
 
 ```bash
 sudo chmod +x install.sh
 ./install.sh
 ```
 
-* It will automaticly copy all nessary file and folders to /opt/easysql folder  and configured
+* It will automatically copy all necessary files and folders to /opt/easysql folder and configured.
 
-* Just make sure that you have already a mysql/mariadb server install in your system and has a already a database.
+* Just make sure that you already have a mysql/mariadb server installed in your system and has a database ready.
 
-* [Optional] If you face trouble to install mysql/mariadb then go to help folder and run the mysql_setup.sh
+* [Optional] If you face trouble installing mysql/mariadb then go to the help folder and run the mysql_setup.sh
 
 ```bash
 sudo sh mysql_setup.sh
 ```
-It will downlaod , setup and import a dummy database
+It will download, setup, and import a dummy database.
 
-* Provide the database user name, password, and database name
+* Provide the database user name, password, and database name.
 
 * Then It is ready to run
 
@@ -137,39 +160,39 @@ It will downlaod , setup and import a dummy database
 easysql.sh
 ```
 
-* You can run this application from anywhere by your terminal with your curent user
-* All details and logs will be store on that particular folder only you can easyly visit teh location "/opt/easysql"
+* You can run this application from anywhere via your terminal with your current user.
+* All details and logs will be stored in that particular folder only. You can easily visit the location "/opt/easysql".
+
 ---
 
-#  Uninstallation
+## 🗑️ Uninstallation
 
-* To uninstallation just remove the easysql folder from your system. 
+* To uninstall just remove the easysql folder from your system. 
 
 ```bash
-sudo -rm /opt/easysql
+sudo rm -r /opt/easysql
 ```
 
-* And remove the line form your currect shell rc file
+* And remove the line from your current shell rc file.
 
- 
- - First check your shell 
- ```bash
- echo $SHELL
- ``` 
-- As example if you use bash shell, then open ~/.bashrc file form any text editor
+- First check your shell 
+```bash
+echo $SHELL
+``` 
+- As an example, if you use bash shell, then open the ~/.bashrc file from any text editor:
 
 ```bash
 nano ~/.bashrc
 ```
 
-- Remove the line from last "export PATH=/opt/easysql:$PATH"
+- Remove the line from the bottom: "export PATH=/opt/easysql:$PATH"
 
-- Then Ctrl+S for save
-- And Ctrl+X for exit
+- Then Ctrl+S to save
+- And Ctrl+X to exit
 
-* Now It is totaly uninstall from your system
+* Now It is totally uninstalled from your system.
 
-
+---
 
 ## 🙏 Acknowledgements
 
@@ -188,10 +211,8 @@ Redistribution, modification, or commercial use is **strictly prohibited** witho
 
 For licensing inquiries, please contact the authors.
 
-
 ---
 
 ## 📫 Contact
 
 For questions, suggestions, or collaboration, please open an [Issue](https://github.com/yourusername/EASYSQL/issues) or contact any team member via GitHub.
-
