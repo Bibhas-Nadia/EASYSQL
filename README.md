@@ -40,7 +40,7 @@ Watch our demonstration video to see EASYSQL in action:
 
 *Note: If the video preview above does not load in your markdown editor, click the banner below to open the video:*
 
-[![EASYSQL Demo Banner](Images/demo_img.jpg)](Images/demo.mp4)
+[![EASYSQL Demo Banner](Images/demo_img.jpg)](Images/demo_vid.mp4)
 
 ---
 
