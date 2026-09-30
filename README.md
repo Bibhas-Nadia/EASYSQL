@@ -49,7 +49,7 @@ We are proud to announce that the EASYSQL system has been officially patented!
 - **Publication Date:** 11-09-2026
 - **Date of Filing:** 17-05-2026
 
-![Patent Document](1000057237.jpg)
+![Patent Document](Images/patent_img.jpg)
 
 ---
 
