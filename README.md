@@ -36,7 +36,7 @@ Watch our demonstration video to see EASYSQL in action!
 
 *(Note: Standard Markdown doesn't support embedding video players directly, but you can link an image to your video. Replace the links below with your actual YouTube/Vimeo links, or simply drag and drop your `.mp4` file directly into the GitHub editor to auto-generate a video player!)*
 
-[![EASYSQL Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![EASYSQL Demo](https://demo_img.jpg)](Images/demo.mp4)
 
 ---
 
